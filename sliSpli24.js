@@ -17,4 +17,29 @@ threeInOne( [1,2,3,4,5,6,7,8,9]) should return [6,15,24]
 threeInOne( [1,3,5,2,4,6,7,7,7]) should return [9,12,21]
 */
 
-alert('No data')
+/*
+p arr, merge 3 elemts to one
+r 1,2,3 = 6
+e:
+p
+*/
+// let arr = [1,3,5,2,4,6,7,7,7]
+
+// let muri = [1,3,5,2,4,6,7,7,7].reduce((a, c) => a + c, 0)
+// console.log(muri);
+
+function threeInOne(arr){
+          var result = [];
+
+          for(var i=0; i<arr.length; i+=3) {
+                    result.push(arr[i] + arr[i+1] + arr[i+2]);
+          }
+
+          // return result
+          console.log(result);
+}
+
+threeInOne( [1,2,3]) 
+threeInOne( [1,2,3,4,5,6]) 
+threeInOne( [1,2,3,4,5,6,7,8,9])
+threeInOne( [1,3,5,2,4,6,7,7,7])
