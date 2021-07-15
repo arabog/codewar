@@ -47,3 +47,32 @@ function infiniteLoop(arr,d,n){
 infiniteLoop( [[1,2,3],[4,5,6],[7,8,9]],"left",1)
 infiniteLoop( [[1,2,3],[4,5,6],[7,8,9]],"right",1)
 infiniteLoop( [[1,2],[3,4,5,6],[7,8,9,10]],"left",2)
+
+
+let arra = [1, 2,4]
+
+console.log(...arra);
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+
+var a = 0, b = 0, arr = [3,6,8,6,7,3, 12];
+arr.some((x,index)=>{
+  a = arr[index];  //or a=x  
+  b = arr[index + 1];
+  return a + b == 15
+})
+console.log(a,b)
